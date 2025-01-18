@@ -10,7 +10,7 @@ SRC = $(PWD)/../src
 ifneq ($(GATES),yes)
 
 # this is the only part you should need to modify:
-VERILOG_SOURCES += $(PWD)/tb.v $(SRC)/top.vhdl $(SRC)/decoder.vhdl
+VERILOG_SOURCES += $(PWD)/tb.v $(SRC)/DUT.vhdl $(SRC)/Gates.vhdl $(SRC)/OR_NOR.vhd
 
 $(error "Only gates simulation supported in this example. Set GATES=yes in your environment.")
 
